@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng nhập vào website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="login-form">
+                <form id="formlogin" name="formlogin">
+                    <h1>Đăng nhập</h1>
+                    <div class="input-box">
+                        <b><i>Tài Khoản</i></b>
+                        <input type="text" id="username" name="username" value="" placeholder="Nhập username">
+                        <p id="errorMessageUser"></p>
+                    </div>
+                    <div class="input-box">
+                        <b><i>Mật khẩu</i></b>
+                        <input type="password" id="pass" name="pass" value="" placeholder="Nhập mật khẩu">
+                        <p id="errorMessagePass"></p>
+                    </div>
+                    <div class="btn-box">
+                        <button id="login" type="button">
+                            Đăng nhập
+                        </button>
+                    </div>
+                    <p id="resLogin"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

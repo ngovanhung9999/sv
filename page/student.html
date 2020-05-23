@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/student.css" />
+
+    <title>Quản Lý Sinh Viên</title>
+</head>
+
+<body>
+    <div class="content clearfix">
+        <h1>Quản Lý Sinh Viên</h1>
+        <div class="clearfix" id="hello-user">
+            <p> xin chào <b><i id="username"></i></b><button id="btnExit">Thoát</button></p>
+        </div>
+        <div class="input">
+            <form id="studentInput" name="studentInput">
+                <div class="row">
+                    <label class="lb" for="fullName">Họ và Tên</label>
+                    <input type="text" id="fullName" name="fullName" value="" />
+                </div>
+                <p id="errorMessageFullName"></p>
+                <div class="row">
+                    <label class="lb" for="dateOfBirth">Ngày Sinh</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" value="" />
+                </div>
+                <p id="errorMessageDateOfBirth"></p>
+                <div class="row rowradio">
+                    <input type="radio" id="male" name="gender" value="1" checked="checked" />
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="0" />
+                    <label for="female">Nữ</label>
+                </div>
+                <div class="row">
+                    <label class="lb" for="homeTown">Quê Quán</label>
+                    <input type="text" id="homeTown" name="homeTown" value="" />
+                </div>
+                <p id="errorMessageHomeTown"></p>
+                <div class="row">
+                    <input type="button" id="add" name="add" value="Thêm" />
+                    <button hidden="hidden" type="button" id="edit" name="add" value="">Sửa</button>
+                </div>
+            </form>
+        </div>
+        <div class="list">
+            <h2>Danh sách sinh viên</h2>
+            <table id="listStudent" class="listData">
+
+            </table>
+        </div>
+    </div>
+    <script src="../js/student.js"></script>
+</body>
+
+</html>
