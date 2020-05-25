@@ -191,7 +191,6 @@
             });
         });
     }
-
     let btnEdit = document.getElementById("edit");
     btnEdit.addEventListener('click', function() {
         let arr = [];

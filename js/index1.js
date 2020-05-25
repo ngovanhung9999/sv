@@ -43,10 +43,12 @@
     const btnLogin = document.getElementById("login");
     btnLogin.addEventListener('click', function() {
         let arr = checkForm();
-        queryUser(resLogin, "http://localhost/sv/model/User.php", JSON.stringify({
-            methodStudent: "checkUser",
-            para: arr
-        }));
+        if (arr !== undefined) {
+            queryUser(resLogin, "http://localhost/sv/model/User.php", JSON.stringify({
+                methodStudent: "checkUser",
+                para: arr
+            }));
+        }
     });
 
     function resLogin(myObj) {
